@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculaCotacaoComponent implements OnInit {
 
+  public simbolo: string = 'USD';
+  public simboloReal: string = 'BRL';
+
+  public valor: number = 1;
+  public valorReal: number = 5.30;
+
   constructor() { }
 
   ngOnInit(): void {

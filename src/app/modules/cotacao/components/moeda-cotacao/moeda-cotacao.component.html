@@ -1,4 +1,3 @@
 <div class="moeda">
-  <span class="moeda-simbolo">{{moedaSimbolo + ' '}}</span>
-  <span class="moeda-valor">{{moedaValor}}</span>
+  <span class="moeda-valor">{{moedaValor | currency:moedaSimbolo}}</span>
 </div>
