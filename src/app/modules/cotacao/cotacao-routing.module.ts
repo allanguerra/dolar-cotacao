@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CotacaoComponent } from './cotacao/cotacao.component';
+import { CotacaoComponent } from './components/cotacao/cotacao.component';
 
 const routes: Routes = [
   {
