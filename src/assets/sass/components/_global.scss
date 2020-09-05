@@ -1,0 +1,29 @@
+@import './variables';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $background;
+  color: $black;
+}
+
+hr {
+  height: 1px;
+  background-color: rgba(black, .1);
+  border: none;
+  margin: 2rem 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

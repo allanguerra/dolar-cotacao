@@ -1,0 +1,22 @@
+@import '../../../../assets/sass/components/variables';
+
+.row {
+
+  margin: 0 -5px;
+
+  .col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding: 0 5px;
+    width: 100%;
+
+    @media #{$medium-and-up} {
+      width: 50%;
+    }
+
+    @media #{$large-and-up} {
+      width: 33.33%;
+    }
+  }
+}

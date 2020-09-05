@@ -1,0 +1,36 @@
+@import '../../../../assets/sass/components/variables';
+
+section {
+  position: relative;
+  height: calc(100vh - #{$nav-height});
+  width: 95%;
+  margin: 0 auto;
+
+  header {
+    h2 {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      margin: 0;
+      padding-block-start: 1.8rem;
+      padding-block-end: .75rem;
+      color: $purple;
+    }
+    span {
+      font-size: 1rem;
+      color: $pink;
+    }
+  }
+
+  main {
+    margin-block-start: 2.2rem;
+    color: $white;
+  }
+
+  @media #{$medium-and-up} {
+    width: 90%;
+  }
+
+  @media #{$large-and-up} {
+    width: 80%;
+  }
+}
