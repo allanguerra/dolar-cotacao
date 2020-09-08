@@ -1,13 +1,11 @@
 <app-calcula-cotacao></app-calcula-cotacao>
-<app-section [title]="'batata'" [description]="'description'">
+<app-section *ngFor="let secao of conteudo"
+  [title]="secao.titulo" [description]="secao.descricao">
 
   <div class="row">
 
-    <app-article class="col"></app-article>
-    <app-article class="col"></app-article>
-    <app-article class="col"></app-article>
-    <app-article class="col"></app-article>
-    <app-article class="col"></app-article>
+    <app-article class="col" *ngFor="let artigo of secao.artigos"
+      [artigo]="artigo"></app-article>
 
   </div>
 

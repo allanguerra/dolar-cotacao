@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtigoService } from '../../services/artigo-service/artigo.service';
+import { Secao } from '../../models/secao.model';
 
 @Component({
   selector: 'app-cotacao',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CotacaoComponent implements OnInit {
 
-  constructor() { }
+  public conteudo: Secao[] = [];
+
+  constructor(
+    private artigoService: ArtigoService
+  ) { }
 
   ngOnInit(): void {
+    this.conteudo = this.artigoService.obterSecoes();
   }
 
 }
