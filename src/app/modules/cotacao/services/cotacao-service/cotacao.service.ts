@@ -9,17 +9,14 @@ import { MoedaCotacao } from '../../models/moeda-cotacao.model'
 })
 export class CotacaoService {
 
-  private readonly BASE_URL: string = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?';
-  private readonly MOEDA: string = '@moeda=';
-  private readonly DATA_COTACAO: string = '@dataCotacao=';
-  private readonly FORMATO: string = 'format=json';
-  private readonly AND = '&';
+  private readonly BASE_URL: string = 'https://economia.awesomeapi.com.br/json';
+  private readonly BRL: string = '-BRL';
 
   constructor(
     private http: HttpClient
   ) { }
 
-  public obterCotacao(moeda: string, dataCotacao: string): Observable<MoedaCotacao> {
-    return this.http.get<MoedaCotacao>(`${this.BASE_URL}${this.MOEDA}'${moeda}'${this.AND}${this.DATA_COTACAO}'${dataCotacao}'${this.AND}${this.FORMATO}`);
+  public obterCotacao(moeda: string): Observable<MoedaCotacao[]> {
+    return this.http.get<MoedaCotacao[]>(`${this.BASE_URL}/${moeda}${this.BRL}`);
   }
 }
