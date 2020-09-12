@@ -36,7 +36,7 @@ export class CalculaCotacaoComponent implements OnInit {
   private obterCotacao(): void {
     this.cotacaoService.obterCotacao(this.simbolo)
       .subscribe((cotacao: MoedaCotacao[]) => {
-        this.cotacao = cotacao[0].high;
+        this.cotacao = cotacao[0].bid;
         this.calcularCotacao();
       })
   }
