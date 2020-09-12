@@ -1,5 +1,7 @@
 <section>
-  <img src="../../../../../assets/images/bandeira-eua.png" alt="bandeira estados unidos, moeda dólar">
+
+  <img [src]="imagem" alt="bandeira referenciando a moeda de cotação">
+
   <main>
     <app-moeda-cotacao [moedaSimbolo]="simbolo" [moedaValor]="valor"
       [editavel]="true" [alinhar]="'alinhar-direita'" (valor)="calcularCotacao($event)"></app-moeda-cotacao>

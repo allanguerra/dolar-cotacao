@@ -1,4 +1,5 @@
 export enum MoedaSimbolo {
   BRL = 'R$',
-  USD = 'US$'
+  USD = 'US$',
+  EUR = '€'
 }

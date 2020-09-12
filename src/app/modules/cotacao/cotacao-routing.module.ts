@@ -2,15 +2,20 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CotacaoComponent } from './components/cotacao/cotacao.component';
+import { CotacaoEuroComponent } from './components/cotacao-euro/cotacao-euro.component';
 
 const routes: Routes = [
   {
-    path: 'cotacao',
+    path: 'dolar',
     component: CotacaoComponent,
   },
   {
+    path: 'euro',
+    component: CotacaoEuroComponent,
+  },
+  {
     path: '',
-    redirectTo: 'cotacao',
+    redirectTo: 'dolar',
     pathMatch: 'full',
   }
 ];

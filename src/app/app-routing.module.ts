@@ -3,8 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'cotacao',
     loadChildren: './modules/cotacao/cotacao.module#CotacaoModule'
+  },
+  {
+    path: '',
+    redirectTo: 'cotacao',
+    pathMatch: 'full',
   }
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { CotacaoService } from '../../services/cotacao-service/cotacao.service';
 import { MoedaCotacao } from '../../models/moeda-cotacao.model';
@@ -10,7 +10,11 @@ import { MoedaCotacao } from '../../models/moeda-cotacao.model';
 })
 export class CalculaCotacaoComponent implements OnInit {
 
-  public simbolo: string = 'USD';
+  @Input()
+  public imagem: string;
+  @Input()
+  public simbolo: string;
+
   public simboloReal: string = 'BRL';
 
   public valor: number = 1;

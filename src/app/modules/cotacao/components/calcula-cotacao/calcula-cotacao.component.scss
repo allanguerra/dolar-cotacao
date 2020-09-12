@@ -3,7 +3,7 @@
 section {
   position: relative;
   height: calc(100vh - #{$nav-height});
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   color: $white;
 
@@ -13,8 +13,12 @@ section {
   justify-content: center;
 
   img {
-    max-width: 100px;
+    max-width: 70px;
     margin-bottom: 3rem;
+
+    @media #{$medium-and-up} {
+      max-width: 100px;
+    }
   }
 
   main {

@@ -9,12 +9,14 @@ import { SharedModule } from '../../shared/shared.module';
 import { CotacaoComponent } from './components/cotacao/cotacao.component';
 import { CalculaCotacaoComponent } from './components/calcula-cotacao/calcula-cotacao.component';
 import { MoedaCotacaoComponent } from './components/moeda-cotacao/moeda-cotacao.component';
+import { CotacaoEuroComponent } from './components/cotacao-euro/cotacao-euro.component';
 
 @NgModule({
   declarations: [
     CotacaoComponent,
     CalculaCotacaoComponent,
-    MoedaCotacaoComponent
+    MoedaCotacaoComponent,
+    CotacaoEuroComponent
   ],
   imports: [
     CommonModule,
