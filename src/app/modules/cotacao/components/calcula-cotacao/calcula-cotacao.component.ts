@@ -26,7 +26,10 @@ export class CalculaCotacaoComponent implements OnInit {
     this.obterCotacao();
   }
 
-  public calcularCotacao(): void {
+  public calcularCotacao(event?: string): void {
+    if(event) {
+      this.valor = Number.parseFloat(event);
+    }
     this.valorCotacao = this.valor * this.cotacao;
   }
 
@@ -36,5 +39,5 @@ export class CalculaCotacaoComponent implements OnInit {
         this.cotacao = cotacao[0].high;
         this.calcularCotacao();
       })
-  }s
+  }
 }

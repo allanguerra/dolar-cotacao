@@ -1,8 +1,10 @@
 <section>
   <img src="../../../../../assets/images/bandeira-eua.png" alt="bandeira estados unidos, moeda dólar">
   <main>
-    <app-moeda-cotacao [moedaSimbolo]="simbolo" [moedaValor]="valor"></app-moeda-cotacao>
+    <app-moeda-cotacao [moedaSimbolo]="simbolo" [moedaValor]="valor"
+      [editavel]="true" [alinhar]="'alinhar-direita'" (valor)="calcularCotacao($event)"></app-moeda-cotacao>
     <span> hoje, equivale a </span>
-    <app-moeda-cotacao [moedaSimbolo]="simboloReal" [moedaValor]="valorCotacao"></app-moeda-cotacao>
+    <app-moeda-cotacao [moedaSimbolo]="simboloReal" [moedaValor]="valorCotacao"
+      [alinhar]="'alinhar-esquerda'"></app-moeda-cotacao>
   </main>
 </section>

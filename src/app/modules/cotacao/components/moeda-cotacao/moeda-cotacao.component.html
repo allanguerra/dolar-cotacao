@@ -1,3 +1,4 @@
 <div class="moeda">
-  <span class="moeda-valor">{{moedaValor | currency:moedaSimbolo}}</span>
+  <input [(ngModel)]="moedaValor" [disabled]="!editavel" [class]="alinhar" tabindex="1"
+    (change)="calcular($event)"/>
 </div>

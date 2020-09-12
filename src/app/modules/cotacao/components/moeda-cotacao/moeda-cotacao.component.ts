@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-moeda-cotacao',
@@ -13,9 +13,22 @@ export class MoedaCotacaoComponent implements OnInit {
   @Input()
   public moedaValor: string = '';
 
+  @Input()
+  public alinhar: string = '';
+
+  @Input()
+  public editavel: boolean = false;
+
+  @Output()
+  public valor: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public calcular(): void {
+    this.valor.emit(this.moedaValor);
   }
 
 }

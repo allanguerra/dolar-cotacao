@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule} from '@angular/forms';
 
 import { CotacaoRoutingModule } from './cotacao-routing.module';
 
@@ -16,6 +17,7 @@ import { MoedaCotacaoComponent } from './components/moeda-cotacao/moeda-cotacao.
   ],
   imports: [
     CommonModule,
+    FormsModule,
     CotacaoRoutingModule,
     SharedModule
   ]
