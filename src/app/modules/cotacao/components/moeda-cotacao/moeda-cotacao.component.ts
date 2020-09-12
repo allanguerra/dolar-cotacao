@@ -33,6 +33,7 @@ export class MoedaCotacaoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.mascara.prefix = MoedaSimbolo[this.moedaSimbolo] || '';
   }
 
   public calcular(): void {
