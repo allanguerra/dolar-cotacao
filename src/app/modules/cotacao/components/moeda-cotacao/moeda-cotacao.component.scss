@@ -10,16 +10,16 @@
     width: 100%;
     background: transparent;
     color: $white;
-    text-align: center;
+    text-align: center !important;
     border: none;
     outline: none;
 
     @media #{$medium-and-up} {
       &.alinhar-direita {
-        text-align: right;
+        text-align: right !important;
       }
       &.alinhar-esquerda {
-        text-align: left;
+        text-align: left !important;
       }
     }
 

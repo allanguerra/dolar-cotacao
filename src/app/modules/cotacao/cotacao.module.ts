@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule} from '@angular/forms';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 import { CotacaoRoutingModule } from './cotacao-routing.module';
 
@@ -18,6 +19,7 @@ import { MoedaCotacaoComponent } from './components/moeda-cotacao/moeda-cotacao.
   imports: [
     CommonModule,
     FormsModule,
+    CurrencyMaskModule,
     CotacaoRoutingModule,
     SharedModule
   ]

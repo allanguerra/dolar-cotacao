@@ -2,7 +2,6 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CotacaoModule } from './modules/cotacao/cotacao.module';
 
@@ -20,7 +19,6 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
     CotacaoModule,
     SharedModule
   ],

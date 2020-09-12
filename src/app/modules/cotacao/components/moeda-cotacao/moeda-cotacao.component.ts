@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+import { MoedaSimbolo } from '../../models/enums/moeda-simbolo.enum';
+
 @Component({
   selector: 'app-moeda-cotacao',
   templateUrl: './moeda-cotacao.component.html',
@@ -21,6 +23,12 @@ export class MoedaCotacaoComponent implements OnInit {
 
   @Output()
   public valor: EventEmitter<string> = new EventEmitter<string>();
+
+  public mascara: any = {
+    prefix: '',
+    thousands: '.',
+    decimal: ','
+  }
 
   constructor() { }
 
