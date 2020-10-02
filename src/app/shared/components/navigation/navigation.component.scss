@@ -11,9 +11,9 @@ nav {
   box-shadow: 0px 0px 8px black;
 
   .nav-wrapper {
-    position: relative;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
     width: 100%;
     color: $white;
@@ -26,27 +26,15 @@ nav {
       font-size: 18px;
       font-weight: 700;
       color: inherit;
+      transition: font-size .5s ease-in-out;
 
       @media #{$medium-and-up} {
         font-size: 24px;
       }
     }
 
-    ul {
-      list-style: none;
-      margin-left: auto;
-      line-height: $nav-height;
-      text-align: center;
-
-      li {
-        display: inline;
-        margin: 0;
-        padding: 0 20px;
-
-        a {
-          cursor: pointer;
-        }
-      }
+    .menu-wrapper {
+      margin: 0 30px;
     }
   }
 }

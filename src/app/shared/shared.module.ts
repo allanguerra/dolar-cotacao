@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { SectionComponent } from './components/section/section.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ArticleComponent } from './components/article/article.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
@@ -11,7 +12,8 @@ import { ArticleComponent } from './components/article/article.component';
   declarations: [
     SectionComponent,
     NavigationComponent,
-    ArticleComponent
+    ArticleComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { ArticleComponent } from './components/article/article.component';
   exports: [
     SectionComponent,
     NavigationComponent,
-    ArticleComponent
+    ArticleComponent,
+    MenuComponent
   ]
 })
 export class SharedModule { }

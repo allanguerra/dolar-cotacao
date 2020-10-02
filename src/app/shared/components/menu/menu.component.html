@@ -1,0 +1,14 @@
+<section>
+
+  <div class="menu" [ngClass]="{'open': menuOpen}">
+    <ul>
+      <li><a routerLink="/cotacao/dolar">Dólar</a></li>
+      <li><a routerLink="/cotacao/euro">Euro</a></li>
+    </ul>
+  </div>
+
+  <div class="menu-button" [ngClass]="{'open-icon': menuOpen}" (click)="toggleMenu()">
+    <div class="menu-button-icon"></div>
+  </div>
+
+</section>
