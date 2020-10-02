@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@angular/core';
 
 import { MoedaSimbolo } from '../../models/enums/moeda-simbolo.enum';
 
@@ -40,4 +40,10 @@ export class MoedaCotacaoComponent implements OnInit {
     this.valor.emit(this.moedaValor);
   }
 
+  @HostListener('document:keypress', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if(event.key === 'Enter') {
+      this.calcular();
+    }
+  }
 }

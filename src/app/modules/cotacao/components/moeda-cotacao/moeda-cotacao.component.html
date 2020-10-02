@@ -1,4 +1,4 @@
 <div class="moeda">
   <input [(ngModel)]="moedaValor" [disabled]="!editavel" [class]="alinhar" tabindex="1"
-    (change)="calcular()" currencyMask [options]="mascara" />
+    (blur)="calcular()" currencyMask [options]="mascara" />
 </div>
