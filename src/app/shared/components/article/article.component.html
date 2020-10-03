@@ -7,6 +7,6 @@
     {{artigo.descricao}}
   </main>
   <footer>
-    <button>Leia mais</button>
+    <a [routerLink]="['/artigo', artigo.id]">Leia mais</a>
   </footer>
 </article>
