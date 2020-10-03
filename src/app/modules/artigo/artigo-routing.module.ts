@@ -5,7 +5,8 @@ import { ExibeArtigoComponent } from './components/exibe-artigo/exibe-artigo.com
 const routes: Routes = [
   {
     path: '',
-    component: ExibeArtigoComponent
+    component: ExibeArtigoComponent,
+    pathMatch: 'full'
   }
 ];
 

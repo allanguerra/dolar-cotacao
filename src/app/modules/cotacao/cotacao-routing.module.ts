@@ -8,10 +8,12 @@ const routes: Routes = [
   {
     path: 'dolar',
     component: CotacaoComponent,
+    pathMatch: 'full'
   },
   {
     path: 'euro',
     component: CotacaoEuroComponent,
+    pathMatch: 'full'
   },
   {
     path: '',
