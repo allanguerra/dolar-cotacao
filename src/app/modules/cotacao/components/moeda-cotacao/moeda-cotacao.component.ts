@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@angular/core';
 
-import { MoedaSimbolo } from '../../models/enums/moeda-simbolo.enum';
+import { MoedaSimbolo } from '../../../../models/enums/moeda-simbolo.enum';
 
 @Component({
   selector: 'app-moeda-cotacao',

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { CotacaoService } from '../../services/cotacao-service/cotacao.service';
-import { MoedaCotacao } from '../../models/moeda-cotacao.model';
+import { MoedaCotacao } from '../../../../models/moeda-cotacao.model';
 
 @Component({
   selector: 'app-calcula-cotacao',

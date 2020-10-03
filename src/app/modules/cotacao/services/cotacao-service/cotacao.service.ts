@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { MoedaCotacao } from '../../models/moeda-cotacao.model'
+import { MoedaCotacao } from '../../../../models/moeda-cotacao.model'
 
 @Injectable({
   providedIn: 'root'
