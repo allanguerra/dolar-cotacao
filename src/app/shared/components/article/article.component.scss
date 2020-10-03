@@ -5,30 +5,52 @@ article {
   border-radius: 3px;
   background: lighten($background, 5%);
   margin-bottom: 16px;
-  padding: 5px 8px;
   box-shadow: 2px 2px 5px $black;
 
-  header h3 {
-    margin-top: 8px;
-    margin-bottom: 12px;
-    font-size: 1.2rem;
+  transition: all .2s ease-out;
+
+  &:hover {
+    transform: translateX(2px) translateY(-3px);
+  }
+
+  header img {
+    max-width: 100%;
+    border-radius: 3px 3px 0 0;
+    background-size: cover;
   }
 
   main {
     margin-top: 5px;
     margin-bottom: 16px;
-    font-size: 1rem;;
+    font-size: 1rem;
+    padding: 5px 8px;
+
+    h3 {
+      margin-top: 8px;
+      margin-bottom: 24px;
+      font-size: 1.3rem;
+    }
   }
 
-  footer button {
-    cursor: pointer;
-    display: block;
-    background: transparent;
-    border: 1px solid $light-blue;
-    border-radius: 1px;
-    color: $light-blue;
-    margin-left: auto;
-    padding: 10px 8px;
-    outline-color: darken($light-blue, $amount: 10%);
+  footer {
+    padding: 5px 8px;
+
+    button {
+      cursor: pointer;
+      display: block;
+      background: transparent;
+      border: 1px solid $light-blue;
+      border-radius: 1px;
+      color: $light-blue;
+      padding: 10px 8px;
+      outline-color: darken($light-blue, 10%);
+
+      transition: all .2s ease;
+
+      &:hover {
+        background: $light-blue;
+        color: lighten($background, 5%);
+      }
+    }
   }
 }

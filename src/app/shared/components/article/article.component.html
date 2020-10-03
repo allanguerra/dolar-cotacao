@@ -1,8 +1,9 @@
 <article>
   <header>
-    <h3>{{artigo.titulo}}</h3>
+    <img [src]="artigo.imagem" [alt]="artigo.titulo">
   </header>
   <main>
+    <h3>{{artigo.titulo}}</h3>
     {{artigo.descricao}}
   </main>
   <footer>
