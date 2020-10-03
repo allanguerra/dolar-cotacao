@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: './modules/cotacao/cotacao.module#CotacaoModule'
   },
   {
+    path: 'artigo/:id',
+    loadChildren: './modules/artigo/artigo.module#ArtigoModule'
+  },
+  {
     path: '',
     redirectTo: 'cotacao',
     pathMatch: 'full',

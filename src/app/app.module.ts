@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { CotacaoModule } from './modules/cotacao/cotacao.module';
+import { ArtigoModule } from './modules/artigo/artigo.module';
 
 import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HttpClientModule,
     CotacaoModule,
+    ArtigoModule,
     SharedModule
   ],
   providers: [
