@@ -1,1 +1,28 @@
-<p>exibe-artigo works!</p>
+<section>
+
+  <header class="image">
+    <img [src]="artigo.imagem" [alt]="artigo.descricao">
+  </header>
+
+  <article>
+
+    <header>
+
+      <h2>{{artigo.titulo}}</h2>
+
+      <div class="autor">
+        <cite>por: Allan Guerra </cite><time>em: {{artigo.data}}</time>
+      </div>
+
+      <span>{{artigo.descricao}}</span>
+    </header>
+
+    <main>
+      <div class="artigo">
+        {{artigo.artigo}}
+      </div>
+    </main>
+
+  </article>
+
+</section>

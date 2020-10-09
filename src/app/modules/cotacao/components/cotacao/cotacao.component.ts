@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ArtigoService } from '../../services/artigo-service/artigo.service';
+import { ArtigoService } from '../../../../shared/services/artigo-service/artigo.service';
 import { Secao } from '../../../../models/secao.model';
 
 @Component({
